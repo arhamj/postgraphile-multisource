@@ -2,7 +2,7 @@
   "port": 9100,
   "max_per_page": 25,
   "services": {
-    "marsh": "postgresql://postgres:postgres@127.0.0.1:5432/erc20",
-    "zeroswap": "postgresql://postgres:postgres@127.0.0.1:5432/zeroswap"
+    "decode": "postgresql://indexer:indexer123@postgres:5432/method_hash",
+    "zeroswap_exchange": "postgresql://indexer:indexer123@postgres:5432/zeroswap_exchange_v2"
   }
 }

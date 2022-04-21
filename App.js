@@ -8,6 +8,10 @@ const app = express();
 
 const services = config.services;
 
+app.get('/', (req, res) => {
+    res.send({status: 'ok'})
+})
+
 for (const [service, connectionString] of Object.entries(services)) {
     console.log(service, connectionString)
     app.use(
